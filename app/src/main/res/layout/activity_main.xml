@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:textColor="#D82525"
+        android:inputType="text"
+        android:hint="Enter Country Name"
+        android:textColorHint="@color/white"
+        android:shadowColor="@color/white"
+        android:layout_toLeftOf="@id/buttonSearch"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:text="Search"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"/>
+
+
+
+
+    <ImageView
+        android:id="@+id/imageViewFlag"
+        android:layout_width="wrap_content"
+         android:layout_above="@id/layoutLinear"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/editTextSearch"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/mm"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/layoutLinear"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="80sp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvUpdated"
+            android:text="Updated"
+            android:textSize="25dp"
+            android:layout_weight="1"
+            android:textColor="#E83C06"
+            android:layout_gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Country Name"
+            android:layout_gravity="right"
+            android:textColor="#E83C06"
+            android:textSize="25dp" />
+        <TextView
+            android:id="@+id/tvCountryCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Country Code"
+            android:layout_gravity="right"
+            android:textColor="#E83C06"
+            android:textSize="25dp" />
+        <TextView
+            android:id="@+id/tvPopulation"
+            android:text="Population"
+            android:textSize="25dp"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:textColor="#E83C06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvCases"
+            android:text="Cases"
+            android:textSize="25dp"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:textColor="#E83C06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvRecovered"
+            android:text="Recovered"
+            android:textSize="25dp"
+            android:layout_weight="1"
+           android:layout_gravity="right"
+            android:textColor="#E83C06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvActive"
+            android:text="Active"
+            android:textSize="25dp"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:textColor="#E83C06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvDeath"
+            android:text="Deaths"
+            android:textSize="25dp"
+            android:layout_weight="1"
+            android:textColor="#E83C06"
+            android:layout_gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvContinent"
+            android:text="Continent"
+            android:textSize="25dp"
+            android:layout_weight="1"
+            android:textColor="#E83C06"
+            android:layout_gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
